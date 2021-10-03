@@ -21,17 +21,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.symmetric(vertical: 20),
                 child: Text("YAMS", textAlign: TextAlign.center, style: TextStyle(color: Color.fromRGBO(239, 68, 68, 1), fontSize: 32, fontWeight: FontWeight.w700)),
               ),
-              Text("You Are My Sunshine, App that gives you all information you need about solar and other non-renewable energy.", textAlign: TextAlign.center, style: TextStyle(fontSize: 16))
-            ])),
-            Container(
-                child: Row(children: [
-              Expanded(
-                  child: TextButton(
-                      child: Text("Get Started"),
-                      onPressed: () {
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
-                      },
-                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1)
+              Text("You Are My Sunshine, App that gives you all information you need about solar and other non-renewable energy.", textAlign: TextAlign.center, style: TextStyle(fontSize: 16)),
+              Container(
+                  // width: double.infinity,
+                  // height: double.infinity,
+                  // color: Colors.white,
+                  child: Row(children: [
+                Expanded(
+                    child: TextButton(
+                        child: Text("Get Started"),
+                        onPressed: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
+                        },
+                        // onPressed: (){},
+                        style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1))))
+              ]))
             ]))
           ]),
         ),
