@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Covast',
+      title: 'YAMS',
       theme: ThemeData(
           // primarySwatch: Color.fromRGBO(0, 196, 140,1),
-          accentColor: Color.fromRGBO(0, 196, 140, 1),
-          primaryColor: Color.fromRGBO(255, 100, 124, 1),
+          // accentColor: Color.fromRGBO(0, 196, 140, 1),
+          // primaryColor: Color.fromRGBO(255, 100, 124, 1),
           fontFamily: 'SF Pro Display',
           scaffoldBackgroundColor: Colors.white,
           appBarTheme: AppBarTheme(
