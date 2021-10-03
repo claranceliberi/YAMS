@@ -87,7 +87,7 @@ class _FactsState extends State<Facts> {
 
   List<EnergyData> getEnergyData() {
     final List<EnergyData> energyData = [
-      EnergyData("Electricity", 30, Color(0xEF444433)),
+      EnergyData("Electricity", 30, const Color(0xEF444433)),
       EnergyData("Solar", 70, Color(0xEF444433))
     ];
 
