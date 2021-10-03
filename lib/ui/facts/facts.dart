@@ -1,4 +1,4 @@
-eimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import '../calculator/calculator.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
@@ -45,8 +45,8 @@ class _FactsState extends State<Facts> {
                   Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
                 Container(
-                    child: SfCircularChart(series: <CircularSeries>[
-                  PieSeries<EnergyData, string>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelMapper: DataLa),
+                    child: SfCircularChart(title: ChartTitle(text: "chart mwa"), series: <CircularSeries>[
+                  PieSeries<EnergyData, string>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelSettings: DataLabelSettings(isVisible: true)),
                 ]))
               ],
             ))
