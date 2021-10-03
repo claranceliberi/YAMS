@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-// import '../home/home_page.dart';
+import '../facts/facts.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -26,7 +25,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ])),
             Container(
                 child: Row(children: [
-              Expanded(child: TextButton(child: Text("Get Started"), onPressed: () {}, style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1), shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0))))))
+              Expanded(
+                  child: TextButton(
+                      child: Text("Get Started"),
+                      onPressed: () {
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
+                      },
+                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1), shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0))))))
             ]))
           ]),
         ),
