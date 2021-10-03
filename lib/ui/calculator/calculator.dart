@@ -72,6 +72,32 @@ class _CalculatorState extends State<Calculator> {
         InputField(),
         SizedBox(height: 20),
 
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        SizedBox(height: 20),
+        Container(
+          width: double.infinity,
+          height: 45,
+          child: RaisedButton(
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, "/explore");
+            },
+            child: Text(
+              "Compare..",
+              style: TextStyle(fontSize: 15, color: Colors.white),
+            ),
+            color: Color.fromRGBO(239, 68, 68, 1),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+            elevation: 0,
+          ),
+        ),
+
         // Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
