@@ -31,7 +31,7 @@ class _FactsState extends State<Facts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xE5E5E5),
+      backgroundColor: const Color(0xE5E5E5),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
