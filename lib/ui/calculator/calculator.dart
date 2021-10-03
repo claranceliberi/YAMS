@@ -50,7 +50,6 @@ class _CalculatorState extends State<Calculator> {
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Container(
-                            color: Colors.red,
                             child: Text(
                               "Temparature average",
                             ),
