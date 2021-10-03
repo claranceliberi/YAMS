@@ -25,7 +25,7 @@ class _FactsState extends State<Facts> {
           child: Column(children: [
             Text(
               "Home",
-              align: TextAlign.center,
+              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Container(
