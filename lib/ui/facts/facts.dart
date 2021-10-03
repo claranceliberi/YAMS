@@ -66,6 +66,7 @@ class _FactsState extends State<Facts> {
                     ]))
                   ],
                 )),
+            SizedBox(height: 40),
             Row(children: [
               Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
             ])
