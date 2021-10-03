@@ -89,7 +89,7 @@ class _CalculatorState extends State<Calculator> {
               Navigator.pushReplacementNamed(context, "/explore");
             },
             child: Text(
-              "Compare..",
+              "Compare&&&&&",
               style: TextStyle(fontSize: 15, color: Colors.white),
             ),
             color: Color.fromRGBO(239, 68, 68, 1),
