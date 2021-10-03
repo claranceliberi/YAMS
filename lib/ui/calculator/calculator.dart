@@ -25,7 +25,13 @@ class _CalculatorState extends State<Calculator> {
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
           child: Column(children: <Widget>[
-        Text("Hello")
+        Text("Hello"),
+        Container(
+          width: double.infinity,
+          height: double.infinity,
+          color: Colors.white,
+          child: Text("Hello two here"),
+        )
         // Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
