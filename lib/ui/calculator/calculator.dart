@@ -47,7 +47,15 @@ class _CalculatorState extends State<Calculator> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        Text("Temparature avarage", style: TextStyle(fontSize: 14)),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            color: Colors.red,
+                            child: Text(
+                              "Temparature average",
+                            ),
+                          ),
+                        ),
                         InputField(),
                         SizedBox(height: 20),
                         Text("Start date", style: TextStyle(fontSize: 14)),
