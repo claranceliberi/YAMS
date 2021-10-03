@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
             elevation: 6,
             color: Colors.white,
-            textTheme: Theme.of(context).textTheme.apply(bodyColor: Colors.black, fontSizeFactor: 0.9),
+            textTheme: Theme.of(context).textTheme.apply(bodyColor: Colors.redAccent, fontSizeFactor: 0.9),
             iconTheme: IconThemeData(color: Colors.grey),
             // backgroundColor: Colors.white
           ),
