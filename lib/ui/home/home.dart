@@ -15,10 +15,11 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            Text(
-              "Welcome to YAMS app",
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            ),
+            Container(
+                child: Column(children: <Widget>[
+              Image.asset("assets/images/app-logo.png"),
+              Text("You are my sunshine, App that gives you all information you need about solar and other non-renewable energe")
+            ]))
           ]),
         ),
       ),
