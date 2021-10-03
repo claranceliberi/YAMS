@@ -34,7 +34,7 @@ class _FactsState extends State<Facts> {
                   Text("Energy Usage", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
                 ]),
                 Row(children: [
-                  Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
+                  Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
                 Container(child: Text('chart'))
               ],
