@@ -30,18 +30,7 @@ class _AppSplashState extends State<AppSplash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset("assets/logos/app-logo.png"),
-            Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: Text(
-                "COVASTARTS",
-                style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            Image.asset("assets/images/app-logo.png"),
           ],
         ),
       ),
