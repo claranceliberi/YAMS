@@ -36,7 +36,7 @@ class _FactsState extends State<Facts> {
                 Row(children: [
                   Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
-                Container(child: Text('chart'))
+                Container(child: SfCartesianChart())
               ],
             ))
           ]),
@@ -63,3 +63,5 @@ class _FactsState extends State<Facts> {
     );
   }
 }
+
+class GDPData {}
