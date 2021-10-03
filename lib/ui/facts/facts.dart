@@ -47,10 +47,10 @@ class _FactsState extends State<Facts> {
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   children: [
-                    Row(children: [
+                    Column(children: [
                       Text("Energy Usage", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
                     ]),
-                    Row(children: [
+                    Column(children: [
                       Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                     ]),
                     Container(
@@ -66,7 +66,9 @@ class _FactsState extends State<Facts> {
                     ]))
                   ],
                 )),
-            Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
+            Column(children: [
+              Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
+            ])
           ]),
         ),
       ),
