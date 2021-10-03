@@ -72,7 +72,7 @@ class _FactsState extends State<Facts> {
               icon: Icon(Icons.business, size: 0),
               title: Text(
                 "Home",
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Color.fromRGBO(239, 68, 68, 1)),
               )),
           BottomNavigationBarItem(
               icon: Icon(Icons.business, size: 0),
