@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../calculator/calculator.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class Facts extends StatefulWidget {
   @override
@@ -68,8 +69,9 @@ class _FactsState extends State<Facts> {
                 )),
             SizedBox(height: 40),
             Row(children: [
-              Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
-            ])
+              Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))
+            ]),
+            Container(child: ListView(children: <Widget>[]))
           ]),
         ),
       ),
