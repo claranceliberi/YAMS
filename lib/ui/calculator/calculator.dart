@@ -10,7 +10,6 @@ class _CalculatorState extends State<Calculator> {
   bool keyboardVisibility = false;
   @override
   Widget build(BuildContext context) {
-   >if (?
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       resizeToAvoidBottomInset: false,
