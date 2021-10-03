@@ -19,20 +19,23 @@ class _FactsState extends State<Facts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(children: [
             Text(
               "Home",
-              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Container(
                 child: Column(
               children: [
-                Text("Energy Usage", textAlign: TextAlign.left),
-                Text("Last 5 years", textAlign: TextAlign.left),
+                Row(children: [
+                  Text("Energy Usage", textAlign: TextAlign.left)
+                ]),
+                Row(children: [
+                  Text("Last 5 years", textAlign: TextAlign.left),
+                ]),
                 Container(child: Text('chart'))
               ],
             ))
