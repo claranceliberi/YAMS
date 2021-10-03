@@ -41,7 +41,8 @@ class _FactsState extends State<Facts> {
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Container(
-                color: Colors.white,
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                // color: Colors.white,
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   children: [
