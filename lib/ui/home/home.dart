@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.all(20),
           child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Text(
-              "Welcome to YAMS",
+              "Welcome to YAMS app",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
           ]),
