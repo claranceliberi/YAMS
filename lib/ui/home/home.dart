@@ -23,9 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text("You Are My Sunshine, App that gives you all information you need about solar and other non-renewable energy.", textAlign: TextAlign.center, style: TextStyle(fontSize: 16)),
               Container(
-                  // width: double.infinity,
-                  // height: double.infinity,
-                  // color: Colors.white,
                   child: Row(children: [
                 Expanded(
                     child: TextButton(
