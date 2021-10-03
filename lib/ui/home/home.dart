@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import '../facts/facts.dart';
 
-class WelcomeScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       onPressed: () {
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
                       },
-                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1))))
+                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1)
             ]))
           ]),
         ),
