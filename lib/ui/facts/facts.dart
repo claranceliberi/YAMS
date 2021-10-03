@@ -52,6 +52,7 @@ class _FactsState extends State<Facts> {
                     child: SfCircularChart(legend: Legend(isVisible: true, overflowMode: LegendItemOverflowMode.wrap), tooltipBehavior: _tooltipBehaviour, series: <CircularSeries>[
                   PieSeries<EnergyData, String>(
                     dataSource: _chartData,
+                    pointColorMapper: (EnergyData data, _) => data.color,
                     xValueMapper: (EnergyData data, _) => data.name,
                     yValueMapper: (EnergyData data, _) => data.number,
                     dataLabelSettings: DataLabelSettings(isVisible: true),
@@ -86,8 +87,8 @@ class _FactsState extends State<Facts> {
 
   List<EnergyData> getEnergyData() {
     final List<EnergyData> energyData = [
-      EnergyData("Electricity", 30),
-      EnergyData("Solar", 70)
+      EnergyData("Electricity", 30, Color.fromRGBO(239, 68, 68, .5)),
+      EnergyData("Solar", 70, Color.fromRGBO(239, 68, 68, .9))
     ];
 
     return energyData;
@@ -95,7 +96,8 @@ class _FactsState extends State<Facts> {
 }
 
 class EnergyData {
-  EnergyData(this.name, this.number);
+  EnergyData(this.name, this.number, this.color);
   final String name;
   final int number;
+  final Color color;
 }
