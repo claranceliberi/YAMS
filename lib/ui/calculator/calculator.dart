@@ -9,7 +9,7 @@ class Calculator extends StatefulWidget {
 
 class _CalculatorState extends State<Calculator> {
   bool keyboardVisibility = false;
-    int _selectedIndex = 0;
+  int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
     _selectedIndex = index;
@@ -84,7 +84,7 @@ class _CalculatorState extends State<Calculator> {
           ],
         ),
       ),
-        bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: [
@@ -102,7 +102,6 @@ class _CalculatorState extends State<Calculator> {
               ))
         ],
       ),
-    );
     );
   }
 }
