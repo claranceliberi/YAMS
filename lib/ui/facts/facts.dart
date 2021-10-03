@@ -71,7 +71,10 @@ class _FactsState extends State<Facts> {
             Row(children: [
               Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))
             ]),
-            Container(child: Row(children: <Widget>[]))
+            Container(
+                child: Row(children: <Widget>[
+              CarouselSlider(items: null, options: CarouselOptions(height: 200, autoPlay: true, enlargeCenterPage: true, aspectRatio: 16 / 9, autoPlayCurve: Curves.fastOutSlowIn, enableInfiniteScroll: true, autoPlayAnimationDuration: Duration(milliseconds: 800), viewportFraction: 0.8))
+            ]))
           ]),
         ),
       ),
