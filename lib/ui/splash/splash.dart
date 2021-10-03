@@ -1,44 +1,50 @@
-import 'dart:async';
-
-import 'package:boilerplate/constants/assets.dart';
-import 'package:boilerplate/data/sharedpref/constants/preferences.dart';
-import 'package:boilerplate/utils/routes/routes.dart';
-import 'package:boilerplate/widgets/app_icon_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:async';
+import '../home/home.dart';
 
-class SplashScreen extends StatefulWidget {
+class AppSplash extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _SplashScreenState();
+  _AppSplashState createState() => _AppSplashState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _AppSplashState extends State<AppSplash> {
   @override
   void initState() {
     super.initState();
-    startTimer();
+    _startTime();
+  }
+
+  _startTime() async {
+    var duration = Duration(seconds: 2);
+    return new Timer(duration, route);
+  }
+
+  route() {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override
   Widget build(BuildContext context) {
-
-    return Material(
-      child: Center(child: AppIconWidget(image: Assets.appLogo)),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset("assets/logos/app-logo.png"),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                "COVASTARTS",
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
-  }
-
-  startTimer() {
-    var _duration = Duration(milliseconds: 2000);
-    return Timer(_duration, navigate);
-  }
-
-  navigate() async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-
-    if (preferences.getBool(Preferences.is_logged_in) ?? false) {
-      Navigator.of(context).pushReplacementNamed(Routes.home);
-    } else {
-      Navigator.of(context).pushReplacementNamed(Routes.login);
-    }
   }
 }
