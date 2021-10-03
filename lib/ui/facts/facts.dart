@@ -30,8 +30,8 @@ class _FactsState extends State<Facts> {
             Container(
                 child: Column(
               children: [
-                Text("Energy Usage"),
-                Text("Last 5 years"),
+                Text("Energy Usage", textAlign: TextAlign.left),
+                Text("Last 5 years", textAlign: TextAlign.left),
                 Container(child: Text('chart'))
               ],
             ))
