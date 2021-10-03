@@ -3,22 +3,14 @@ import '../../widgets/input_field.dart';
 
 class Calculator extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _CalculatorState createState() => _CalculatorState();
 }
 
-class _LoginState extends State<Calculator> {
+class _CalculatorState extends State<Calculator> {
   bool keyboardVisibility = false;
   @override
   Widget build(BuildContext context) {
-    if (WidgetsBinding.instance.window.viewInsets.bottom > 0.0) {
-      setState(() {
-        keyboardVisibility = true;
-      });
-    } else {
-      setState(() {
-        keyboardVisibility = false;
-      });
-    }
+   >if (?
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       resizeToAvoidBottomInset: false,
