@@ -31,7 +31,7 @@ class _FactsState extends State<Facts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(0.9),
+      backgroundColor: Colors.white.withOpacity(0.95),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -40,6 +40,7 @@ class _FactsState extends State<Facts> {
               "Home",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 24),
             Container(
                 decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                 // color: Colors.white,
