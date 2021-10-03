@@ -46,7 +46,7 @@ class _FactsState extends State<Facts> {
                 ]),
                 Container(
                     child: SfCircularChart(title: ChartTitle(text: "chart mwa"), series: <CircularSeries>[
-                  PieSeries<EnergyData, string>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelSettings: DataLabelSettings(isVisible: true)),
+                  PieSeries<EnergyData, String>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelSettings: DataLabelSettings(isVisible: true)),
                 ]))
               ],
             ))
