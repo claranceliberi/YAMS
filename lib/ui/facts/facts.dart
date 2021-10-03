@@ -8,6 +8,12 @@ class Facts extends StatefulWidget {
 
 class _FactsState extends State<Facts> {
   int _selectedIndex = 0;
+  late List<EnergyData> _chartData;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   void _onItemTapped(int index) {
     _selectedIndex = index;
@@ -62,6 +68,19 @@ class _FactsState extends State<Facts> {
       ),
     );
   }
+
+  List<EnergyData> getEnergyData() {
+    final List<EnergyData> energyData = [
+      EnergyData("Electricity", 20),
+      EnergyData("Solar", 80)
+    ];
+
+    return energyData;
+  }
 }
 
-class GDPData {}
+class EnergyData {
+  EnergyData(this.name, this.number);
+  final String name;
+  final int number;
+}
