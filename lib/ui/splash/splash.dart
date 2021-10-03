@@ -21,7 +21,7 @@ class _AppSplashState extends State<AppSplash> {
   }
 
   route() {
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Calculator()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override
