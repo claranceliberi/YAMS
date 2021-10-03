@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../widgets/input_field.dart';
+import '../facts/facts.dart';
 
 class Calculator extends StatefulWidget {
   @override
@@ -8,6 +9,15 @@ class Calculator extends StatefulWidget {
 
 class _CalculatorState extends State<Calculator> {
   bool keyboardVisibility = false;
+    int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    _selectedIndex = index;
+    if (_selectedIndex == 0) {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,6 +84,25 @@ class _CalculatorState extends State<Calculator> {
           ],
         ),
       ),
+        bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.business, size: 0),
+              title: Text(
+                "Home",
+                style: TextStyle(color: Colors.black),
+              )),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.business, size: 0),
+              title: Text(
+                "Stats",
+                style: TextStyle(color: Colors.black),
+              ))
+        ],
+      ),
+    );
     );
   }
 }
