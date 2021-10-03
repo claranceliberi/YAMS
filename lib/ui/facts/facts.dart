@@ -22,11 +22,19 @@ class _FactsState extends State<Facts> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          child: Column(children: [
             Text(
               "Home",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
+            Container(
+                child: Column(
+              children: [
+                Text("Energy Usage"),
+                Text("Last 5 years"),
+                Container(child: Text('chart'))
+              ],
+            ))
           ]),
         ),
       ),
