@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text("You Are My Sunshine, App that gives you all information you need about solar and other non-renewable energy.", textAlign: TextAlign.center, style: TextStyle(fontSize: 16))
             ])),
-            Container(child: TextButton(child: Text("Get Started", style: TextStyle(color: Colors.white)), onPressed: () {}, style: ButtonStyle(foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(239, 68, 68, 1))))
+            Container(child: TextButton(child: Text("Get Started", style: TextStyle(color: Colors.white)), onPressed: () {}, style: ButtonStyle(foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(239, 68, 68, 1)))))
           ]),
         ),
       ),
