@@ -14,6 +14,7 @@ class _FactsState extends State<Facts> {
 
   @override
   void initState() {
+    _tooltipBehaviour = TooltipBehavior();
     _chartData = getEnergyData();
     super.initState();
   }
