@@ -50,20 +50,37 @@ class _CalculatorState extends State<Calculator> {
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Container(
-                            child: Text(
-                              "Temparature average",
-                            ),
+                            child: Text("Temparature average", style: TextStyle(fontSize: 14)),
                           ),
                         ),
+                        SizedBox(height: 5),
                         InputField(),
                         SizedBox(height: 20),
-                        Text("Start date", style: TextStyle(fontSize: 14)),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            child: Text("Start Date", style: TextStyle(fontSize: 14)),
+                          ),
+                        ),
+                        SizedBox(height: 5),
                         InputField(),
                         SizedBox(height: 20),
-                        Text("End date", style: TextStyle(fontSize: 14)),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            child: Text("End Date", style: TextStyle(fontSize: 14)),
+                          ),
+                        ),
+                        SizedBox(height: 5),
                         InputField(),
                         SizedBox(height: 20),
-                        Text("Parameters", style: TextStyle(fontSize: 14)),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            child: Text("Select Climate element", style: TextStyle(fontSize: 14)),
+                          ),
+                        ),
+                        SizedBox(height: 5),
                         InputField(),
                         SizedBox(height: 20),
                         Container(
@@ -77,7 +94,7 @@ class _CalculatorState extends State<Calculator> {
                               "Compare",
                               style: TextStyle(fontSize: 15, color: Colors.white),
                             ),
-                            color: Theme.of(context).primaryColor,
+                            color: Color.fromRGBO(239, 68, 68, 1),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
                             elevation: 0,
                           ),
