@@ -26,18 +26,21 @@ class _CalculatorState extends State<Calculator> {
                 ),
               ),
             ),
-
             SizedBox(height: 20),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Container(
-                child: Text(
-                  "Average Temperature",
-                ),
-              ),
-            ),
-            SizedBox(height: 5),
-            InputField(),
+            Padding(
+                padding: EdgeInsets.only(left: 10),
+                child: Column(children: <Widget>[
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      child: Text(
+                        "Average Temperature",
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 5),
+                  InputField(),
+                ])),
 
             SizedBox(height: 20),
             Align(
