@@ -10,6 +10,7 @@ class Facts extends StatefulWidget {
 class _FactsState extends State<Facts> {
   int _selectedIndex = 0;
   late List<EnergyData> _chartData;
+  late TooltipBehavior _tooltipBehaviour;
 
   @override
   void initState() {
@@ -19,6 +20,8 @@ class _FactsState extends State<Facts> {
 
   void _onItemTapped(int index) {
     _selectedIndex = index;
+    _tooltipBehaviour = TooltipBehavior();
+
     if (_selectedIndex == 1) {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Calculator()));
     }
@@ -45,7 +48,7 @@ class _FactsState extends State<Facts> {
                   Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
                 Container(
-                    child: SfCircularChart(title: ChartTitle(text: "chart mwa"), series: <CircularSeries>[
+                    child: SfCircularChart(series: <CircularSeries>[
                   PieSeries<EnergyData, String>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelSettings: DataLabelSettings(isVisible: true)),
                 ]))
               ],
@@ -76,8 +79,8 @@ class _FactsState extends State<Facts> {
 
   List<EnergyData> getEnergyData() {
     final List<EnergyData> energyData = [
-      EnergyData("Electricity", 20),
-      EnergyData("Solar", 80)
+      EnergyData("Electricity", 30),
+      EnergyData("Solar", 70)
     ];
 
     return energyData;

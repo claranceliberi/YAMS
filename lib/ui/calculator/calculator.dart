@@ -21,7 +21,6 @@ class _CalculatorState extends State<Calculator> {
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                color: Colors.red,
                 child: Text(
                   "Compare your data with NASA data",
                 ),
@@ -32,7 +31,6 @@ class _CalculatorState extends State<Calculator> {
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                color: Colors.red,
                 child: Text(
                   "Average Temperature",
                 ),
@@ -45,7 +43,6 @@ class _CalculatorState extends State<Calculator> {
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                color: Colors.red,
                 child: Text(
                   "Average Temperature",
                 ),
@@ -58,7 +55,6 @@ class _CalculatorState extends State<Calculator> {
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                color: Colors.red,
                 child: Text(
                   "Average Temperature",
                 ),
@@ -71,7 +67,6 @@ class _CalculatorState extends State<Calculator> {
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                color: Colors.red,
                 child: Text(
                   "Average Temperature",
                 ),
@@ -80,6 +75,7 @@ class _CalculatorState extends State<Calculator> {
             SizedBox(height: 5),
             InputField(),
 
+            SizedBox(height: 20),
             Container(
               width: double.infinity,
               height: 45,
