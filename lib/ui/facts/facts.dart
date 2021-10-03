@@ -71,7 +71,7 @@ class _FactsState extends State<Facts> {
             Row(children: [
               Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))
             ]),
-            Container(child: ListView(children: <Widget>[]))
+            ListView(children: <Widget>[])
           ]),
         ),
       ),
