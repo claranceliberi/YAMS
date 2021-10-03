@@ -10,7 +10,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
