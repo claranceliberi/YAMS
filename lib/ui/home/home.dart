@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
                 child: Column(children: <Widget>[
               Image.asset("assets/images/app-logo.png"),
+              Text("YAMS"),
               Text("You are my sunshine, App that gives you all information you need about solar and other non-renewable energe")
             ]))
           ]),
