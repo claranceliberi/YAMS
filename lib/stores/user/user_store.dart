@@ -4,9 +4,9 @@ import 'package:mobx/mobx.dart';
 import '../../data/repository.dart';
 import '../form/form_store.dart';
 
-part 'user_store.g.dart';
+// part 'user_store.g.dart';
 
-class UserStore = _UserStore with _$UserStore;
+// class UserStore = _UserStore with _$UserStore;
 
 abstract class _UserStore with Store {
   // repository instance
@@ -23,7 +23,6 @@ abstract class _UserStore with Store {
 
   // constructor:---------------------------------------------------------------
   _UserStore(Repository repository) : this._repository = repository {
-
     // setting up disposers
     _setupDisposers();
 
@@ -43,8 +42,7 @@ abstract class _UserStore with Store {
   }
 
   // empty responses:-----------------------------------------------------------
-  static ObservableFuture<bool> emptyLoginResponse =
-  ObservableFuture.value(false);
+  static ObservableFuture<bool> emptyLoginResponse = ObservableFuture.value(false);
 
   // store variables:-----------------------------------------------------------
   @observable
@@ -59,7 +57,6 @@ abstract class _UserStore with Store {
   // actions:-------------------------------------------------------------------
   @action
   Future login(String email, String password) async {
-
     final future = _repository.login(email, password);
     loginFuture = ObservableFuture(future);
     await future.then((value) async {
