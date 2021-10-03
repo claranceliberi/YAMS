@@ -87,8 +87,8 @@ class _FactsState extends State<Facts> {
 
   List<EnergyData> getEnergyData() {
     final List<EnergyData> energyData = [
-      EnergyData("Electricity", 30, Color.fromRGBO(240, 68, 68, 0.3)),
-      EnergyData("Solar", 70, Color.fromRGBO(100, 68, 68, 0.9))
+      EnergyData("Electricity", 30, Color(0xEF444433)),
+      EnergyData("Solar", 70, Color(0xEF444433))
     ];
 
     return energyData;
