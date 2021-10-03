@@ -11,7 +11,7 @@ class _FactsState extends State<Facts> {
 
   void _onItemTapped(int index) {
     _selectedIndex = index;
-    if (_selectedIndex == 2) {
+    if (_selectedIndex == 1) {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Calculator()));
     }
   }
