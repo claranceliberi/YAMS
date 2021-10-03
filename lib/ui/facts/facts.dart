@@ -65,7 +65,8 @@ class _FactsState extends State<Facts> {
                       ),
                     ]))
                   ],
-                ))
+                )),
+            Text("Facts", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
           ]),
         ),
       ),
