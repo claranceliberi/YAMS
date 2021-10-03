@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+eimport 'package:flutter/material.dart';
 import '../calculator/calculator.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class Facts extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _FactsState extends State<Facts> {
 
   @override
   void initState() {
+    _chartData = getEnergyData();
     super.initState();
   }
 
@@ -42,7 +44,10 @@ class _FactsState extends State<Facts> {
                 Row(children: [
                   Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
-                Container(child: SfCartesianChart())
+                Container(
+                    child: SfCircularChart(series: <CircularSeries>[
+                  PieSeries<EnergyData, string>(dataSource: _chartData, xValueMapper: (EnergyData data, _) => data.name, yValueMapper: (EnergyData data, _) => data.number, dataLabelMapper: DataLa),
+                ]))
               ],
             ))
           ]),
