@@ -49,18 +49,14 @@ class _FactsState extends State<Facts> {
                   Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
                 ]),
                 Container(
-                    child: SfCircularChart(
-                      legend: Legend(isVisible:true, overflowMode: LegendItemOverflowMode.wrap),
-                      tooltipBehavior: _tooltipBehaviour,
-
-                      series: <CircularSeries>[
+                    child: SfCircularChart(legend: Legend(isVisible: true, overflowMode: LegendItemOverflowMode.wrap), tooltipBehavior: _tooltipBehaviour, series: <CircularSeries>[
                   PieSeries<EnergyData, String>(
-                    dataSource: _chartData, 
-                    xValueMapper: (EnergyData data, _) => data.name, 
-                    yValueMapper: (EnergyData data, _) => data.number, 
-                    dataLabelSettings: DataLabelSettings(isVisible: true)
+                    dataSource: _chartData,
+                    xValueMapper: (EnergyData data, _) => data.name,
+                    yValueMapper: (EnergyData data, _) => data.number,
+                    dataLabelSettings: DataLabelSettings(isVisible: true),
                     enableTooltip: true,
-                    ),
+                  ),
                 ]))
               ],
             ))
