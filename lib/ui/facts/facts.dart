@@ -73,7 +73,12 @@ class _FactsState extends State<Facts> {
             ]),
             Container(
                 child: Row(children: <Widget>[
-              CarouselSlider(items: null, options: CarouselOptions(height: 200, autoPlay: true, enlargeCenterPage: true, aspectRatio: 16 / 9, autoPlayCurve: Curves.fastOutSlowIn, enableInfiniteScroll: true, autoPlayAnimationDuration: Duration(milliseconds: 800), viewportFraction: 0.8))
+              CarouselSlider(items: [
+                Container(
+                    decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                ))
+              ], options: CarouselOptions(height: 200, autoPlay: true, enlargeCenterPage: true, aspectRatio: 16 / 9, autoPlayCurve: Curves.fastOutSlowIn, enableInfiniteScroll: true, autoPlayAnimationDuration: Duration(milliseconds: 800), viewportFraction: 0.8))
             ]))
           ]),
         ),
