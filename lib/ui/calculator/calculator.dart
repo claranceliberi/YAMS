@@ -19,6 +19,7 @@ class _CalculatorState extends State<Calculator> {
           children: [
             Expanded(
               child: Container(
+                color: Colors.white,
                 width: double.infinity,
                 child: Column(
                   children: [

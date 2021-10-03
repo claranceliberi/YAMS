@@ -17,7 +17,7 @@ class InputField extends StatelessWidget {
           contentPadding: EdgeInsets.only(left: 20, bottom: 11, top: 15, right: 20),
         ),
       ),
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+      decoration: BoxDecoration(color: Color.fromRGBO(242, 241, 241, 1), borderRadius: BorderRadius.circular(5)),
     );
   }
 }
