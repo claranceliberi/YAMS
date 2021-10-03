@@ -15,15 +15,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           padding: const EdgeInsets.all(20),
           child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Expanded(
-                child: Container(
-                    child: Column(children: <Widget>[
+                child: Center(
+                    child: Container(
+                        child: Column(children: <Widget>[
               Image.asset("assets/images/app-logo.png"),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 20),
                 child: Text("YAMS", textAlign: TextAlign.center, style: TextStyle(color: Color.fromRGBO(239, 68, 68, 1), fontSize: 32, fontWeight: FontWeight.w700)),
               ),
               Text("Yoau Are My Sunshine, App that gives you all information you need about solar and other non-renewable energy.", textAlign: TextAlign.center, style: TextStyle(fontSize: 16))
-            ]))),
+            ])))),
             Expanded(
                 child: Container(
                     child: Row(children: [
