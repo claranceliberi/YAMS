@@ -149,6 +149,35 @@ class _CalculatorState extends State<Calculator> {
           ),
         ),
 
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Select Climate element", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Select Climate element", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Select Climate element", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
         // Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
