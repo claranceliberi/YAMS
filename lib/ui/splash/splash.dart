@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import '../home/home.dart';
+import '../welcome/welcome.dart';
 import '../calculator/calculator.dart';
 
 class AppSplash extends StatefulWidget {
@@ -21,7 +21,7 @@ class _AppSplashState extends State<AppSplash> {
   }
 
   route() {
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
   }
 
   @override
