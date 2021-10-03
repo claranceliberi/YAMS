@@ -25,13 +25,53 @@ class _CalculatorState extends State<Calculator> {
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
           child: Column(children: <Widget>[
-        Text("Hello"),
-        Container(
-          width: double.infinity,
-          height: double.infinity,
-          color: Colors.white,
-          child: Text("Hello two here"),
-        )
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text(
+              "Calculate",
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Temparature average", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Start Date", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("End Date", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+        SizedBox(height: 20),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            child: Text("Select Climate element", style: TextStyle(fontSize: 14)),
+          ),
+        ),
+        SizedBox(height: 5),
+        InputField(),
+        SizedBox(height: 20),
+
         // Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
