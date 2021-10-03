@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Facts()));
                       },
-                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1), shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0))))))
+                      style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 24.0), primary: Colors.white, textStyle: TextStyle(color: Colors.white, fontSize: 18), backgroundColor: Color.fromRGBO(239, 68, 68, 1))))
             ]))
           ]),
         ),
