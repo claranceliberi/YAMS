@@ -31,6 +31,7 @@ class _FactsState extends State<Facts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xE5E5E5),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -40,27 +41,29 @@ class _FactsState extends State<Facts> {
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Container(
+                color: Colors.white,
+                padding: const EdgeInsets.all(24),
                 child: Column(
-              children: [
-                Row(children: [
-                  Text("Energy Usage", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
-                ]),
-                Row(children: [
-                  Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
-                ]),
-                Container(
-                    child: SfCircularChart(legend: Legend(isVisible: true, overflowMode: LegendItemOverflowMode.wrap), tooltipBehavior: _tooltipBehaviour, series: <CircularSeries>[
-                  PieSeries<EnergyData, String>(
-                    dataSource: _chartData,
-                    pointColorMapper: (EnergyData data, _) => data.color,
-                    xValueMapper: (EnergyData data, _) => data.name,
-                    yValueMapper: (EnergyData data, _) => data.number,
-                    dataLabelSettings: DataLabelSettings(isVisible: true),
-                    enableTooltip: true,
-                  ),
-                ]))
-              ],
-            ))
+                  children: [
+                    Row(children: [
+                      Text("Energy Usage", textAlign: TextAlign.left, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600))
+                    ]),
+                    Row(children: [
+                      Text("Last 5 years", textAlign: TextAlign.left, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey)),
+                    ]),
+                    Container(
+                        child: SfCircularChart(legend: Legend(isVisible: true, overflowMode: LegendItemOverflowMode.wrap), tooltipBehavior: _tooltipBehaviour, series: <CircularSeries>[
+                      PieSeries<EnergyData, String>(
+                        dataSource: _chartData,
+                        pointColorMapper: (EnergyData data, _) => data.color,
+                        xValueMapper: (EnergyData data, _) => data.name,
+                        yValueMapper: (EnergyData data, _) => data.number,
+                        dataLabelSettings: DataLabelSettings(isVisible: true),
+                        enableTooltip: true,
+                      ),
+                    ]))
+                  ],
+                ))
           ]),
         ),
       ),
