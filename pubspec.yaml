@@ -73,7 +73,7 @@ dependencies:
   syncfusion_flutter_charts: ^19.3.43
 
   #slider
-  carousel_slider: ^4.0.0
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
